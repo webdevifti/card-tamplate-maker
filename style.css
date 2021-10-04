@@ -115,8 +115,10 @@ button{
     .card{
         width: 100%;
         box-shadow: none;
+        -webkit-print-color-adjust: exact;
     }
     header nav h1{
         display: none;
     }
+     
   }
