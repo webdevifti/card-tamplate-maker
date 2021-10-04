@@ -75,3 +75,24 @@ label{
     color: #fff;
     margin-bottom: 10px;
 }
+.btn-area{
+    margin-top: 20px;
+}
+button{
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.print-btn{
+    background-color: crimson;
+    color: #fff;
+    padding: 10px 25px;
+}
+
+.download-btn{
+    background-color: transparent;
+    color: #000;
+    border: 1px solid crimson;
+    padding: 10px 25px;
+}

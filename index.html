@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Birthstone&family=Lato&family=Open+Sans:wght@500&family=Poppins&family=Raleway&family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
@@ -18,83 +21,131 @@
             <form>
                 <div class="inputs">
                     <label for="">Title</label>
-                    <input type="text" id="title" placeholder="Write The Post Title">
+                    <input type="text" id="title" onkeyup="getTitle(this.value);" placeholder="Write The Post Title">
+                </div>
+                <div class="inputs">
+                    <label for="">Color</label>
+                        <select onchange="getTitleColor(this.value);" id="titleTextColor">
+                            <option value="0">Choose Color</option>
+                            <option value="white">White</option>
+                            <option value="black">Black</option>
+                            <option value="red">Red</option>
+                            <option value="yellow">Yellow</option>
+                            <option value="green">Green</option>
+                        </select>
                 </div>
                 <div class="inputs">
                     <label for="">Font Family</label>
-                       <select name="" id="titleFontFamily">
-                        <option value="">Sans Serif</option>
-                        <option value="">Roboto</option>
-                        <option value="">Nato Sarif</option>
-                       </select>
+                        <select onchange="getTittleFontFamily(this.value);" id="titleFontFamily">
+                            <option value="0">Choose Font Family</option>
+                            <option value="Open Sans">Open Sans</option>
+                            <option value="Birthstone">Birthstone</option>
+                            <option value="Roboto">Roboto</option>
+                            <option value="Lato">Lato</option>
+                            <option value="Poppins">Poppins</option>
+                            <option value="Raleway">Raleway</option>
+                        </select>
                 </div>
                 <div class="inputs">
                     <label for="">Font Size</label>
-                    <select name="" id="titleFontSize">
-                        <option value="">8</option>
-                        <option value="">10</option>
-                        <option value="">12</option>
-                        <option value="">14</option>
-                        <option value="">16</option>
-                        <option value="">18</option>
-                        <option value="">20</option>
-                        <option value="">22</option>
-                        <option value="">24</option>
-                        <option value="">26</option>
-                        <option value="">28</option>
-                        <option value="">30</option>
+                        <select onchange="getTitleFontSize(this.value);" id="titleFontSize">
+                            <option value="0">Choose Font Size</option>
+                            <option value="14">14</option>
+                            <option value="16">16</option>
+                            <option value="18">18</option>
+                            <option value="20">20</option>
+                            <option value="22">22</option>
+                            <option value="24">24</option>
+                            <option value="26">26</option>
+                            <option value="28">28</option>
+                            <option value="30">30</option>
+                            <option value="32">32</option>
+                            <option value="34">34</option>
+                            <option value="36">36</option>
+                            <option value="38">38</option>
+                            <option value="40">40</option>
+                            <option value="42">42</option>
+                            <option value="44">44</option>
                        </select>
                 </div>
                 <hr><br><br>
                 <div class="inputs">
                     <label for="">Write Post</label>
-                    <textarea name="story_type" id="storyTyper" cols="30" rows="10" placeholder="Write The Post Content"></textarea>
+                    <textarea id="content" cols="30" rows="10" onkeyup="getContent(this.value);" placeholder="Write The Post Content"></textarea>
+                </div>
+                <div class="inputs">
+                    <label for="">Color</label>
+                        <select onchange="getContentTextColor(this.value);" id="contentTextColor">
+                            <option value="0">Choose Color</option>
+                            <option value="white">White</option>
+                            <option value="black">Black</option>
+                            <option value="red">Red</option>
+                            <option value="yellow">Yellow</option>
+                            <option value="green">Green</option>
+                        </select>
                 </div>
                 <div class="inputs">
                     <label for="">Choose Font Family</label>
-                    <select name="font_family" id="contentFontFamily">
-                        <option value="">Sans Serif</option>
-                        <option value="">Roboto</option>
-                        <option value="">Nato Sarif</option>
+                    <select onchange="getContentFontFamily(this.value);" id="contentFontFamily">
+                        <option value="0">Choose Font Family</option>
+                        <option value="Open Sans">Open Sans</option>
+                        <option value="Birthstone">Birthstone</option>
+                        <option value="Roboto">Roboto</option>
+                        <option value="Lato">Lato</option>
+                        <option value="Poppins">Poppins</option>
+                        <option value="Raleway">Raleway</option>
                     </select>
                 </div>
                 <div class="inputs">
                     <label for="">Font Size</label>
-                    <select name="" id="contentFontSize">
-                        <option value="">8</option>
-                        <option value="">10</option>
-                        <option value="">12</option>
-                        <option value="">14</option>
-                        <option value="">16</option>
-                        <option value="">18</option>
-                        <option value="">20</option>
-                        <option value="">22</option>
-                        <option value="">24</option>
-                        <option value="">26</option>
-                        <option value="">28</option>
-                        <option value="">30</option>
-                       </select>
+                    <select onchange="getContentFontSize(this.value)" id="contentFontSize">
+                            <option value="0">Choose Font Size</option>
+                            <option value="8">8</option>
+                            <option value="10">10</option>
+                            <option value="12">12</option>
+                            <option value="14">14</option>
+                            <option value="16">16</option>
+                            <option value="18">18</option>
+                            <option value="20">20</option>
+                            <option value="22">22</option>
+                            <option value="24">24</option>
+                            <option value="26">26</option>
+                            <option value="28">28</option>
+                            <option value="30">30</option>
+                            <option value="32">32</option>
+                            <option value="34">34</option>
+                            <option value="36">36</option>
+                            <option value="38">38</option>
+                            <option value="40">40</option>
+                            <option value="42">42</option>
+                            <option value="44">44</option>
+                    </select>
                 </div>
                 <hr><br><br>
                 <div class="inputs">
                     <label for="">Choose Background</label>
-                    <select name="bg" id="cardBG">
-                        <option value="">Black</option>
-                        <option value="">Red</option>
-                        <option value="">Yellow</option>
-                        <option value="">Green</option>
+                    <select onchange="getCardBG(this.value);" id="cardBG">
+                        <option value="0">Choose Background Color</option>
+                        <option value="white">White</option>
+                        <option value="black">Black</option>
+                        <option value="red">Red</option>
+                        <option value="yellow">Yellow</option>
+                        <option value="green">Green</option>
                     </select>
                 </div>
             </form>
         </aside>
         <section>
-            <div class="card">
-                <h1 class="title">Content Will Be show here</h1>
+            <div class="card" id="mainCard">
+                <h1 class="title" id="cardTitle">This is the title</h1>
                 <div class="content">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, ut? Dolore laboriosam aut tenetur suscipit labore. Perferendis amet, facilis natus optio nobis illum minima quo officiis! Molestiae aliquam molestias tempore.</p>
+                    <p id="cardContent">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, ut? Dolore laboriosam aut tenetur suscipit labore. Perferendis amet, facilis natus optio nobis illum minima quo officiis! Molestiae aliquam molestias tempore.</p>
                 </div>
             </div>
-            
+            <div class="btn-area">
+                <button id="printBtn" class="print-btn">Print</button>
+                <button id="downloadBtn" class="download-btn">Download PDF</button>
+            </div>
         </section>
     </main>
     <footer>
