@@ -1,15 +1,7 @@
-const title = document.getElementById('title');
-const titleFontFamily = document.getElementById('titleFontFamily');
-const titleFontSize = document.getElementById('titleFontSize');
-const content = document.getElementById('content');
-const contentFontFamily = document.getElementById('contentFontFamily');
-const contentFontSize = document.getElementById('contentFontSize');
-const cardBG = document.getElementById('cardBG');
 const mainCard = document.getElementById('mainCard');
 const cardTitle = document.getElementById('cardTitle');
 const cardContent = document.getElementById('cardContent');
 const downloadBtn = document.getElementById('downloadBtn');
-
 
 function getTitle(value){
     cardTitle.innerHTML = value;
