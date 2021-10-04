@@ -40,5 +40,5 @@ function getCardBG(value){
 }
 
 downloadBtn.addEventListener('click', function(){
-    window.print();
+window.print();
 })
