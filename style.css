@@ -110,6 +110,7 @@ button{
     }
     section{
         width: 100%;
+        background-color: transparent;
     }
     .card{
         width: 100%;

@@ -39,3 +39,6 @@ function getCardBG(value){
     mainCard.style.backgroundColor = value;
 }
 
+downloadBtn.addEventListener('click', function(){
+    window.print();
+})
