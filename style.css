@@ -1,0 +1,77 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #ddd;
+}
+header{
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: 100%;
+    width: 90%;
+    margin: 20px auto;
+}
+aside{
+    width: 30%;
+    padding: 10px;
+    background-color: #000;
+    height: 100vh;
+}
+section{
+    width: 68%;
+    background-color: #fff;
+    padding: 20px;
+}
+.card{
+    padding: 20px;
+    height: 600px;
+    width: 100%;
+    background-color: salmon;
+    border-radius: 4px;
+    box-shadow: 1px 1px 8px 0px rgba(0,0,0,0.2);
+}
+.card h1{
+    text-align: center;
+    margin-bottom: 10px;
+    color: #fff;
+}
+.card p{
+    text-align: justify;
+    color: #fff
+}
+input,textarea, select{
+    border: none;
+    background-color: #333;
+    padding: 10px;
+    width: 100%;
+    outline: none;
+    color: #fff;
+    border: 1px solid transparent;
+    margin-top: 5px;
+    border-radius: 4px;
+}
+input::placeholder,textarea::placeholder{
+    color: #aaa;
+}
+textarea{
+    resize: none;
+}
+input:focus,textarea:focus{
+    border: 1px solid #f9f9f9;
+}
+.inputs{
+    margin-bottom: 10px;
+}
+label{
+    color: #fff;
+    margin-bottom: 10px;
+}
