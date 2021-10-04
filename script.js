@@ -8,6 +8,7 @@ const cardBG = document.getElementById('cardBG');
 const mainCard = document.getElementById('mainCard');
 const cardTitle = document.getElementById('cardTitle');
 const cardContent = document.getElementById('cardContent');
+const downloadBtn = document.getElementById('downloadBtn');
 
 
 function getTitle(value){
@@ -37,3 +38,4 @@ function getContentFontSize(value){
 function getCardBG(value){
     mainCard.style.backgroundColor = value;
 }
+

@@ -24,8 +24,12 @@ aside{
     width: 30%;
     padding: 10px;
     background-color: #000;
-    height: 100vh;
+    /* height: 700px;
+    overflow: hidden; */
 }
+/* aside:hover{
+    overflow-y: auto;
+} */
 section{
     width: 68%;
     background-color: #fff;
@@ -88,6 +92,7 @@ button{
     background-color: crimson;
     color: #fff;
     padding: 10px 25px;
+    border: 1px solid transparent;
 }
 
 .download-btn{
@@ -96,3 +101,18 @@ button{
     border: 1px solid crimson;
     padding: 10px 25px;
 }
+@media print {
+    aside{
+      display:none;
+    }
+    .btn-area{
+        display: none;
+    }
+    section{
+        width: 100%;
+    }
+    .card{
+        width: 100%;
+        box-shadow: none;
+    }
+  }
